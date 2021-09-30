@@ -1,10 +1,11 @@
-module github.com/treydock/ssh_exporter
+module github.com/chipgata/ssh_exporter
 
 go 1.16
 
 require (
 	github.com/alecthomas/units v0.0.0-20210208195552-ff826a37aa15 // indirect
 	github.com/anmitsu/go-shlex v0.0.0-20161002113705-648efa622239 // indirect
+	//github.com/chipgata/ssh_exporter v1.2.0
 	github.com/flynn/go-shlex v0.0.0-20150515145356-3f9db97f8568 // indirect
 	github.com/gliderlabs/ssh v0.3.0
 	github.com/go-kit/kit v0.10.0
@@ -16,3 +17,5 @@ require (
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
 )
+
+replace github.com/treydock/ssh_exporter => github.com/chipgata/ssh_exporter v1.2.0

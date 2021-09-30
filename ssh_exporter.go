@@ -25,8 +25,8 @@ import (
 	"github.com/prometheus/common/promlog"
 	"github.com/prometheus/common/promlog/flag"
 	"github.com/prometheus/common/version"
-	"github.com/treydock/ssh_exporter/collector"
-	"github.com/treydock/ssh_exporter/config"
+	"github.com/chipgata/ssh_exporter/collector"
+	"github.com/chipgata/ssh_exporter/config"
 	"gopkg.in/alecthomas/kingpin.v2"
 )
 
