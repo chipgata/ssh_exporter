@@ -46,8 +46,7 @@ func metricsHandler(c *config.Config, logger log.Logger) http.HandlerFunc {
 
 		t := r.URL.Query().Get("target")
 		if t == "" {
-			http.Error(w, "'target' parameter must be specified", http.StatusBadRequest)
-			return
+			t = "localhost:22"
 		}
 		m := r.URL.Query().Get("module")
 		if m == "" {
