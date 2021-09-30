@@ -1,6 +1,7 @@
 ARG ARCH="amd64"
 ARG OS="linux"
-FROM quay.io/prometheus/busybox-${OS}-${ARCH}:glibc
+#FROM quay.io/prometheus/busybox-${OS}-${ARCH}:glibc
+FROM prom/busybox:glibc
 LABEL maintainer="Trey Dockendorf <treydock@gmail.com>"
 ARG ARCH="amd64"
 ARG OS="linux"
