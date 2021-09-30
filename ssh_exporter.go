@@ -58,7 +58,9 @@ func metricsHandler(c *config.Config, logger log.Logger) http.HandlerFunc {
 			return
 		}
 		level.Debug(logger).Log("msg", "Loaded module", "module", module.ModuleName)
-
+		if module.Host != "" {
+			t = module.Host
+		}
 		target := &config.Target{
 			Host:              t,
 			User:              module.User,

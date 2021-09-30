@@ -39,6 +39,7 @@ type SafeConfig struct {
 
 type Module struct {
 	ModuleName        string
+	Host              string   `yaml:"host"`
 	User              string   `yaml:"user"`
 	Password          string   `yaml:"password"`
 	PrivateKey        string   `yaml:"private_key"`
